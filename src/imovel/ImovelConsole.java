@@ -1,6 +1,6 @@
 package imovel;
 
-public class ImovelTest {
+public class ImovelConsole {
     public static void main(String[] args) {
 
         Imovel[] imoveis = new Imovel[4];

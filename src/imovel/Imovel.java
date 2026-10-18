@@ -25,7 +25,10 @@ public class Imovel {
         }
     }
     public String classificarRanking() {
-        if (this.valor > 200000.00) {
+        if (this.valor < 0) {
+            throw new IllegalArgumentException("dados inválidos");
+        }
+        if (this.valor >= 200000.00) {
             return "TOP";
         } else if (this.valor >= 150000.00) {
             return "Médio";
