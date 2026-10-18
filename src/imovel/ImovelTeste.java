@@ -14,7 +14,7 @@ package imovel;
               Imovel imovelAbaixo = new Imovel(3, "Rua Teste03", "Casa", -160000.00);
               Imovel imovelNegativo = new Imovel(4, "Rua Teste04", "Casa", -100.00);
 
-              // Teste 1: exatamente 200 mil deve ser TOP
+              // Teste 1: deve ser TOP
               String obtido1 = classificarOuErro(imovelTop);
               verificar("Teste 01", "Imóvel de R$ " + imovelTop.getValor(), "TOP", obtido1);
 
